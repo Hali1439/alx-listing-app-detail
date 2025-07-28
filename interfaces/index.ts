@@ -9,3 +9,28 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   label: string;
   className?: string;
 }
+
+// interfaces/index.ts
+
+export interface Address {
+  city: string;
+  country: string;
+}
+
+export interface Review {
+  name: string;
+  avatar: string;
+  rating: number;
+  comment: string;
+}
+
+export interface PropertyProps {
+  name: string;
+  image: string;
+  description: string;
+  rating: number;
+  address: Address;
+  category: string[];         // amenities
+  price: number;
+  reviews: Review[];
+}
